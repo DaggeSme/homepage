@@ -57,7 +57,7 @@ export function getBottomBlock(children) {
 
 export default function Container({ children = [], options, additionalClassNames = "" }) {
   return (
-    <div className={getAllClasses(options, `${additionalClassNames} widget-container`)}>
+    <div className={getAllClasses(options, `${additionalClassNames} widget-container`)} id={options.id}>
       {getInnerBlock(children)}
       {getBottomBlock(children)}
     </div>

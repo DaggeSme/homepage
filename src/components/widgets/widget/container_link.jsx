@@ -6,6 +6,7 @@ export default function ContainerLink({ children = [], options, additionalClassN
       href={options.url}
       target={target}
       className={`${getAllClasses(options, additionalClassNames)} information-widget-link`}
+      id={options.id}
     >
       {getInnerBlock(children)}
       {getBottomBlock(children)}

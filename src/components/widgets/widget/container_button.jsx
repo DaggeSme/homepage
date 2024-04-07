@@ -6,6 +6,7 @@ export default function ContainerButton({ children = [], options, additionalClas
       type="button"
       onClick={callback}
       className={`${getAllClasses(options, additionalClassNames)} information-widget-container-button`}
+      id={options.id}
     >
       {getInnerBlock(children)}
       {getBottomBlock(children)}
